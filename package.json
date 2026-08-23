@@ -1,0 +1,20 @@
+{
+  "name": "vaultgram",
+  "version": "1.0.0",
+  "description": "Instagram video -> local transcription -> local LLM summary -> Obsidian note",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/process.js",
+    "dashboard": "node dist/server.js"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

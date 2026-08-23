@@ -1,0 +1,8 @@
+{
+  "WHISPER_CPP_PATH": "/Users/kasra/whisper.cpp/build/bin/whisper-cli",
+  "WHISPER_MODEL_PATH": "/Users/kasra/whisper.cpp/models/ggml-medium.bin",
+  "WHISPER_LANGUAGE": "auto",
+  "OBSIDIAN_VAULT_PATH": "/Users/kasra/Documents/instagram reels/Instagram Notes",
+  "OLLAMA_MODEL": "llama3.1:8b",
+  "OLLAMA_URL": "http://localhost:11434"
+}
