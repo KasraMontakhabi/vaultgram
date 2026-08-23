@@ -5,6 +5,11 @@ A personal, fully-local pipeline: Instagram video URL → transcript (whisper.cp
 
 Everything runs locally. No paid APIs.
 
+> **Note:** paths in this README (e.g. `/Users/kasra/...`) are examples from
+> the original setup. Replace `kasra` with your own macOS username, and
+> adjust `whisper.cpp` / vault paths to wherever they actually live on your
+> machine — both in the commands you run and in your own `config.json`.
+
 ## Prerequisites (already installed)
 
 - `yt-dlp` and `ffmpeg` on PATH (`brew install yt-dlp ffmpeg` if you ever need
@@ -40,10 +45,10 @@ The resulting binary will be at `~/whisper.cpp/build/bin/whisper-cli`.
 
    ```json
    {
-     "WHISPER_CPP_PATH": "/Users/kasra/whisper.cpp/build/bin/whisper-cli",
-     "WHISPER_MODEL_PATH": "/Users/kasra/whisper.cpp/models/ggml-medium.bin",
+     "WHISPER_CPP_PATH": "/Users/<your-username>/whisper.cpp/build/bin/whisper-cli",
+     "WHISPER_MODEL_PATH": "/Users/<your-username>/whisper.cpp/models/ggml-medium.bin",
      "WHISPER_LANGUAGE": "auto",
-     "OBSIDIAN_VAULT_PATH": "/Users/kasra/Documents/instagram reels/Instagram Notes",
+     "OBSIDIAN_VAULT_PATH": "/Users/<your-username>/Documents/YourVault/Instagram Notes",
      "OLLAMA_MODEL": "llama3.1:8b",
      "OLLAMA_URL": "http://localhost:11434"
    }
@@ -131,7 +136,7 @@ Create a Shortcut with:
    - Shell: `/bin/zsh`
    - Script:
      ```bash
-     /usr/bin/env node /Users/kasra/Vaultgram/dist/process.js "$1"
+     /usr/bin/env node /Users/<your-username>/Vaultgram/dist/process.js "$1"
      ```
    - Pass input: as arguments.
 
